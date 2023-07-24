@@ -1,0 +1,335 @@
+@import "./base";
+@import "./header";
+@import "./product-shop";
+@import "./bringing";
+@import "./footer";
+main{
+  width: 100%;
+  padding: 120px 15px 200px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 116px;
+  .about__title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    // justify-content: space-between;
+    .title__speaker{
+      width: 100%;
+      padding: 96px 95px 0 118px;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      border-radius: 8px;
+      background: #D87D4A;
+      background-image: url(/img/desktop/bg-circle-desktop.png);
+      background-repeat: no-repeat;
+      background-position: left top;
+      .title__info{
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        margin-top: 35px;
+        .info{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          color: #FFF;
+          h3{
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 58px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+          p{
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 25px;
+          }
+        }
+        a{
+          width: 100%;
+          max-width: 160px;
+          background: #000;
+          padding: 15px 0;
+
+          text-align: center;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #FFF;
+          &:hover{
+            background: #4C4C4C;
+          }
+        }
+      }
+    }
+    .speaker__title{
+      width: 100%;
+      height: 320px;
+      padding: 0 95px;
+      background-image: url(/img/desktop/speaker-bg-img.png);
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+      h3{
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000;
+      }
+      a{
+        width: 100%;
+        max-width: 160px;
+        padding: 15px 0;
+        border: 2px solid black;
+        background: transparent;
+        text-align: center;
+
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+          background: #000;
+          color: #FFF;
+        }
+      }
+    }
+    .earphone__title{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      img{
+        width: 100%;
+        max-width: 540px;
+      }
+      .title__about{
+        width: 100%;
+        max-width: 540px;
+        padding: 0 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+        background: #F1F1F1;
+        .info{
+          width: 100%;
+          max-width: 247px;
+          height: 118px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          h3{
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #000;
+          }
+          a{
+            width: 100%;
+            max-width: 160px;
+            padding: 15px 0;
+            border: 2px solid black;
+            background: transparent;
+            text-align: center;
+
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000;
+            &:hover{
+              background: #000;
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//TABLET VERSION
+@media only screen and (max-width: 1000px) {
+  main{
+    gap: 44px;
+    padding: 96px 40px;
+    .about__title{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      // justify-content: space-between;
+      .title__speaker{
+        width: 100%;
+        padding: 96px 95px 0 118px;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        border-radius: 8px;
+        background: #D87D4A;
+        background-image: url(/img/desktop/bg-circle-desktop.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        .title__info{
+          width: 100%;
+          max-width: 350px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 40px;
+          margin-top: 35px;
+          .info{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            color: #FFF;
+            h3{
+              font-size: 56px;
+              font-weight: 700;
+              line-height: 58px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+            }
+            p{
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 25px;
+            }
+          }
+          a{
+            width: 100%;
+            max-width: 160px;
+            background: #000;
+            padding: 15px 0;
+
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #FFF;
+            &:hover{
+              background: #4C4C4C;
+            }
+          }
+        }
+      }
+      .speaker__title{
+        width: 100%;
+        height: 320px;
+        padding: 0 95px;
+        background-image: url(/img/desktop/speaker-bg-img.png);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        h3{
+          font-size: 28px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #000;
+        }
+        a{
+          width: 100%;
+          max-width: 160px;
+          padding: 15px 0;
+          border: 2px solid black;
+          background: transparent;
+          text-align: center;
+
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #000;
+          &:hover{
+            background: #000;
+            color: #FFF;
+          }
+        }
+      }
+      .earphone__title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        img{
+          width: 100%;
+          max-width: 540px;
+        }
+        .title__about{
+          width: 100%;
+          max-width: 540px;
+          padding: 0 95px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-radius: 8px;
+          background: #F1F1F1;
+          .info{
+            width: 100%;
+            max-width: 247px;
+            height: 118px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3{
+              font-size: 28px;
+              font-weight: 700;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #000;
+            }
+            a{
+              width: 100%;
+              max-width: 160px;
+              padding: 15px 0;
+              border: 2px solid black;
+              background: transparent;
+              text-align: center;
+
+              font-size: 13px;
+              font-weight: 700;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: #000;
+              &:hover{
+                background: #000;
+                color: #FFF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//MOBILE VERSION
+@media only screen and (max-width: 600px) {
+  main{
+    padding: 40px 24px 120px 24px;
+  }
+}

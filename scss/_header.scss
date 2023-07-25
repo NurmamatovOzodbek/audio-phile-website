@@ -1,13 +1,7 @@
 
 .header{
-  width: 100%;
-  background: #0E0E0E;
-  background-image: url(/img/desktop/hero-bg-headphones.svg);
-  // background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: right top;
-  // padding-bottom: 158px;
   header{
+    // background: red;
     width: 100%;
     padding: 36px 15px;
     display: flex;
@@ -48,71 +42,11 @@
       }
     }
   }
-  .promo__header{
-    width: 100%;
-    // max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    // color: white;
-    align-items: flex-start;
-    padding: 128px 15px 158px 15px;
-    gap: 40px;
-    .promo__about{
-      width: 100%;
-      max-width: 400px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      span{
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 10px;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.4963814914226532);
-      }
-      h1{
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 58px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #ffffff;
-      }
-      p{
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 25px;
-        color: rgba(255, 255, 255, 0.75);
-      }
-    }
-    a{
-      width: 100%;
-      max-width: 160px;
-      padding: 15px 0;
-      background: #D87D4A;
-
-      text-align: center;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #FFF;
-      text-decoration: none;
-      &:hover{
-        background: #FBAF85;
-      }
-    }
-  }
 }
 
 //TABLET VERSION
 @media only screen and (max-width:1000px){
   .header{
-    width: 100%;
-    background: #0E0E0E;
-    background-image: url(/img/tablet/hero-bg-tablet.png);
-    background-position: center;
-    // padding-bottom: 158px;
     header{
       padding: 32px 40px;
       .menu{
@@ -125,22 +59,12 @@
         display: none;
       }
     }
-    .promo__header{
-      align-items: center;
-      padding: 126px 40px 167px 40px;
-      .promo__about{
-        align-items: center;
-        text-align: center;
-      }
-    }
   }
 }
 
 //MOBILE VERSION
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
   .header{
-    background-image: url(/img/mobile/hero-bg-mobile.png);
-    background-repeat: no-repeat;
     header{
       padding: 32px 24px;
       gap: 10px;
@@ -157,21 +81,6 @@
       }
       nav{
         display: none;
-      }
-    }
-    .promo__header{
-      width: 100%;
-      padding: 108px 24px 112px 24px;
-      gap: 28px;
-      .promo__about{
-        gap: 16px;
-        h1{
-          font-size: 36px;
-          font-weight: 700;
-          line-height: 40px;
-          letter-spacing: 1.286px;
-          margin-bottom: 8px;
-        }
       }
     }
   }

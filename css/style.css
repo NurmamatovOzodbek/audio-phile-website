@@ -10,19 +10,15 @@ body {
   padding: 0;
   font-family: "Manrope", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 0;
+}
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.header {
-  width: 100%;
-  background: #0E0E0E;
-  background-image: url(/img/desktop/hero-bg-headphones.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
-}
 .header header {
   width: 100%;
   padding: 36px 15px;
@@ -63,6 +59,46 @@ body {
 }
 .header header nav li a:hover {
   color: #D87D4A;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header header {
+    padding: 32px 40px;
+  }
+  .header header .menu #toolbar {
+    display: block;
+    cursor: pointer;
+  }
+  .header header nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .header header {
+    padding: 32px 24px;
+    gap: 10px;
+  }
+  .header header .menu {
+    width: 100%;
+    max-width: 235px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: space-between;
+  }
+  .header header .menu #toolbar {
+    display: block;
+  }
+  .header header nav {
+    display: none;
+  }
+}
+.header {
+  width: 100%;
+  background: #0E0E0E;
+  background-image: url(/img/desktop/hero-bg-headphones.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 .header .promo__header {
   width: 100%;
@@ -124,16 +160,6 @@ body {
     background-image: url(/img/tablet/hero-bg-tablet.png);
     background-position: center;
   }
-  .header header {
-    padding: 32px 40px;
-  }
-  .header header .menu #toolbar {
-    display: block;
-    cursor: pointer;
-  }
-  .header header nav {
-    display: none;
-  }
   .header .promo__header {
     align-items: center;
     padding: 126px 40px 167px 40px;
@@ -147,24 +173,6 @@ body {
   .header {
     background-image: url(/img/mobile/hero-bg-mobile.png);
     background-repeat: no-repeat;
-  }
-  .header header {
-    padding: 32px 24px;
-    gap: 10px;
-  }
-  .header header .menu {
-    width: 100%;
-    max-width: 235px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    justify-content: space-between;
-  }
-  .header header .menu #toolbar {
-    display: block;
-  }
-  .header header nav {
-    display: none;
   }
   .header .promo__header {
     width: 100%;
@@ -275,7 +283,7 @@ body {
     letter-spacing: 1.071px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .product__shop {
     width: 100%;
     flex-direction: column;
@@ -357,18 +365,24 @@ main .about__title .speaker__title {
   background-image: url(/img/desktop/speaker-bg-img.png);
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 32px;
+  align-items: center;
 }
-main .about__title .speaker__title h3 {
+main .about__title .speaker__title .info {
+  width: 100%;
+  max-width: 204px;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .about__title .speaker__title .info h3 {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #000;
 }
-main .about__title .speaker__title a {
+main .about__title .speaker__title .info a {
   width: 100%;
   max-width: 160px;
   padding: 15px 0;
@@ -382,7 +396,7 @@ main .about__title .speaker__title a {
   text-decoration: none;
   color: #000;
 }
-main .about__title .speaker__title a:hover {
+main .about__title .speaker__title .info a:hover {
   background: #000;
   color: #FFF;
 }
@@ -401,18 +415,16 @@ main .about__title .earphone__title .title__about {
   max-width: 540px;
   padding: 0 95px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   background: #F1F1F1;
 }
 main .about__title .earphone__title .title__about .info {
   width: 100%;
   max-width: 247px;
-  height: 118px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 32px;
 }
 main .about__title .earphone__title .title__about .info h3 {
   font-size: 28px;
@@ -446,100 +458,31 @@ main .about__title .earphone__title .title__about .info a:hover {
     padding: 96px 40px;
   }
   main .about__title {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
-  main .about__title .title__speaker {
-    width: 100%;
-    padding: 96px 95px 0 118px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 8px;
-    background: #D87D4A;
-    background-image: url(/img/desktop/bg-circle-desktop.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-  }
-  main .about__title .title__speaker .title__info {
-    width: 100%;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 35px;
-  }
-  main .about__title .title__speaker .title__info .info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    color: #FFF;
-  }
-  main .about__title .title__speaker .title__info .info h3 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  main .about__title .title__speaker .title__info .info p {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-  main .about__title .title__speaker .title__info a {
-    width: 100%;
-    max-width: 160px;
-    background: #000;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #FFF;
-  }
-  main .about__title .title__speaker .title__info a:hover {
-    background: #4C4C4C;
-  }
-  main .about__title .speaker__title {
-    width: 100%;
-    height: 320px;
-    padding: 0 95px;
-    background-image: url(/img/desktop/speaker-bg-img.png);
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 32px;
   }
-  main .about__title .speaker__title h3 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #000;
+  main .about__title .title__speaker {
+    padding: 52px 170px 64px 170px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    background-image: url(/img/tablet/circle-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center top;
   }
-  main .about__title .speaker__title a {
+  main .about__title .title__speaker img {
     width: 100%;
-    max-width: 160px;
-    padding: 15px 0;
-    border: 2px solid black;
-    background: transparent;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000;
+    max-width: 200px;
   }
-  main .about__title .speaker__title a:hover {
-    background: #000;
-    color: #FFF;
+  main .about__title .title__speaker .title__info {
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+  main .about__title .speaker__title {
+    padding: 0 62px;
+    background-image: url(/img/tablet/speaker-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   main .about__title .earphone__title {
     width: 100%;
@@ -549,54 +492,65 @@ main .about__title .earphone__title .title__about .info a:hover {
   }
   main .about__title .earphone__title img {
     width: 100%;
-    max-width: 540px;
+    max-width: 350px;
+    height: 320px;
   }
   main .about__title .earphone__title .title__about {
     width: 100%;
-    max-width: 540px;
-    padding: 0 95px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 8px;
-    background: #F1F1F1;
+    max-width: 450px;
+    padding: 0 41px;
   }
-  main .about__title .earphone__title .title__about .info {
+}
+@media only screen and (max-width: 700px) {
+  main {
+    padding: 40px 24px 120px 24px;
+  }
+  main .about__title {
+    gap: 24px;
+  }
+  main .about__title .title__speaker {
+    padding: 55px 23px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  main .about__title .title__speaker img {
     width: 100%;
-    max-width: 247px;
-    height: 118px;
+    max-width: 200px;
+  }
+  main .about__title .title__speaker .title__info {
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+  main .about__title .title__speaker .title__info .info h3 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.286px;
+  }
+  main .about__title .speaker__title {
+    padding: 0 62px;
+    background-image: url(/img/tablet/speaker-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -50px;
+  }
+  main .about__title .earphone__title {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 24px;
   }
-  main .about__title .earphone__title .title__about .info h3 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #000;
-  }
-  main .about__title .earphone__title .title__about .info a {
+  main .about__title .earphone__title img {
     width: 100%;
-    max-width: 160px;
-    padding: 15px 0;
-    border: 2px solid black;
-    background: transparent;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000;
+    max-width: 699px;
+    height: 320px;
   }
-  main .about__title .earphone__title .title__about .info a:hover {
-    background: #000;
-    color: #FFF;
-  }
-}
-@media only screen and (max-width: 600px) {
-  main {
-    padding: 40px 24px 120px 24px;
+  main .about__title .earphone__title .title__about {
+    width: 100%;
+    max-width: 699px;
+    height: 200px;
+    padding: 0 24px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -22,3 +22,20 @@ body{
   margin: 0 auto;
   // padding: 0 15px;
 }
+.btn{
+  width: 100%;
+  max-width: 160px;
+  padding: 15px 0;
+  background: #D87D4A;
+
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFF;
+  text-decoration: none;
+  &:hover{
+    background: #FBAF85;
+  }
+}

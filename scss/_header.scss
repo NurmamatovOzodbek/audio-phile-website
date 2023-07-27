@@ -1,13 +1,19 @@
-
+.head{
+  width: 100%;
+  background: #0E0E0E;
+}
 .header{
+  width: 100%;
+  background: #0E0E0E;
+  // padding: 98px 0;
   header{
-    // background: red;
     width: 100%;
     padding: 36px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ffffff33;
+    background: #0E0E0E;
     img{
       cursor: pointer;
     }

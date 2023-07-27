@@ -1,6 +1,10 @@
-.header{
+.head{
   width: 100%;
   background: #0E0E0E;
+}
+.header{
+  width: 100%;
+  // background: #0E0E0E;
   background-image: url(/img/desktop/hero-bg-headphones.svg);
   // background-size: 100%;
   background-repeat: no-repeat;
@@ -67,7 +71,7 @@
 @media only screen and (max-width:1000px){
   .header{
     width: 100%;
-    background: #0E0E0E;
+    // background: #0E0E0E;
     background-image: url(/img/tablet/hero-bg-tablet.png);
     background-position: center;
     // padding-bottom: 158px;

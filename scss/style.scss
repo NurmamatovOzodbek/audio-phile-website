@@ -10,11 +10,13 @@ main{
   display: flex;
   flex-direction: column;
   gap: 116px;
+  flex-grow: 1;
   .about__title{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 48px;
+    margin-bottom: 84px;
     // justify-content: space-between;
     .title__speaker{
       width: 100%;

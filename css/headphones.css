@@ -23,11 +23,22 @@ body::-webkit-scrollbar {
   margin: 0 auto;
 }
 
+a {
+  user-select: none;
+}
+
+img {
+  user-select: none;
+}
+
 .btn {
   width: 100%;
   max-width: 160px;
   padding: 15px 0;
   background: #D87D4A;
+  border: none;
+  outline: none;
+  cursor: pointer;
   text-align: center;
   font-size: 13px;
   font-weight: 700;
@@ -35,6 +46,7 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
   color: #FFF;
   text-decoration: none;
+  user-select: none;
 }
 .btn:hover {
   background: #FBAF85;

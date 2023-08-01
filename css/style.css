@@ -52,6 +52,10 @@ img {
   background: #FBAF85;
 }
 
+.go__back:hover {
+  color: #D87D4A;
+}
+
 .head {
   width: 100%;
   background: #0E0E0E;
